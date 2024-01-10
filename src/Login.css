@@ -1,0 +1,82 @@
+.InicioSesion table {
+    width: 100%;
+  }
+  
+  .InicioSesion h1 {
+    color: white;
+    text-align: center;
+  }
+  
+  .InicioSesion table th {
+    width: 50%;
+  }
+  
+  
+  .img-login:hover {
+    filter: invert(1);
+  }
+  
+  .img-login img {
+    width: 350px;
+  }
+  
+  .formulario {
+    text-align: center;
+    font-size: 28px;
+    color: white;
+    height: 500px;
+    margin-top: 2px;
+    text-indent: 60px;
+  
+  }
+  
+  .formulario div {
+    margin: 30px;
+    text-align: center;
+  }
+  
+  .formulario input {
+    border-radius: 10px;
+  }
+  
+  .inputFormulario a {
+    color: #000000;
+    font-size: 17px;
+    text-decoration: none;
+  }
+  #contenido-izq {
+    margin-left: 100px;
+    border-right: 2px solid white;
+  }
+  #enviar {
+    width: 250px;
+    height: 50px;
+    font-size: 25px;
+  }
+  #enviar:hover {
+    background: #000000;
+    text-decoration: none;
+    color: white;
+  }
+  .espacioForm{
+    font-size: 25px;
+  }
+  
+  
+  @media only screen and (max-width: 768px) {
+    #contenido-izq {
+      display: none;
+    }
+    .formulario {
+      text-align: center;
+      font-size: 25px;
+      height: 500px;
+      margin-top: 20px;
+      text-indent: 60px;
+    }
+  
+    .formulario div{
+      margin-right:100px;
+    }
+  
+  }

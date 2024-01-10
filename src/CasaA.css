@@ -1,0 +1,141 @@
+/* ======= COLORES ======= */
+
+:root{
+  --black: #222;
+  --white: #fff;
+  --azul: #0751a6;
+  --amarillo: #d3b717;
+  --rojo: #e71247;
+}
+*,
+*::before,
+*::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html{
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+body{
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--black);
+  background-color: var(--white);
+}
+
+h2,
+h3,
+h4{
+  font-weight: 400;
+}
+img{
+  
+  max-width: 100%;
+  max-height: 100%;
+}
+a{
+  text-decoration: none;
+}
+ul,
+li{
+  list-style: none;
+}
+.container{
+  max-width: 114rem;
+  margin: 0 auto;
+  padding: 0 1.6rem;
+}
+@media only screen and (max-width: 1200px){
+  .container{
+      padding: 0 3rem;
+  }
+}
+@media only screen and (max-width: 768px){
+  .container{
+      padding: 0 5rem;
+  }
+}
+
+
+
+
+/* Detalles */
+.detalles{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding-top: 15rem;
+}
+.detalle-grid{
+  padding-left: 10px;
+  grid-template-columns: 1.2fr 1.2fr;
+  display: grid;
+  grid-gap:3rem;
+  justify-items: center;
+  align-items: center;
+}
+
+
+.detalles-content{
+  padding: 2rem;
+}
+.detalles-content h3{
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.detalles-content .precio span{
+  color: var(--azul);
+  font-size: 2rem;
+  font-weight: 600;
+}
+.detalles-content .description{
+  padding-top: 2rem;
+}
+.detalles-content .description span{
+  line-height: 2.8rem;
+}
+@media only screen and (max-width: 840px){
+  .detalle-grid{
+    margin: 10px;
+      grid-template-columns: 1fr;
+  }
+}
+
+.list-a {
+  display: inline-block;
+  padding: 0;
+  list-style-image: url("./imagenes/Casa.png");
+}
+
+.list-a li {
+
+  width: 50%;
+  float: left;
+
+  text-align: center;
+
+  list-style-image: url("./imagenes/Casa.png");
+}
+
+
+
+
+
+.datos{
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 10px;
+
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 1px;
+  font-size: 15px;
+  text-align: center;
+}
+
+

@@ -1,0 +1,826 @@
+.derecha{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  
+}
+
+/* Propiedad filtro */
+
+.dark-mode-boton{
+  width: 35px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  filter: invert(100%);
+}
+
+header img{
+  filter: invert(100%);
+}
+
+/* Uso de pseudoclases */
+
+.dark-mode-boton:hover{
+  cursor: pointer;
+}
+
+.header1{
+  background-image: url(./imagenes/fondo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0px 0px 30px 0px;
+  align-items: center;
+  position: relative;
+  min-height: 650px;
+}
+
+.header{
+  background-image: url(./imagenes/fondo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0px 0px 30px 0px;
+  align-items: center;
+  position: relative;
+  min-height: 180px;
+}
+
+
+.contenido-header{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 150px;
+
+}
+
+header h1{
+  padding: 250px;
+  text-align: left;
+  color: white;
+  font-weight: bold;
+  line-height: 2;
+  max-width: 600px;
+}
+
+.barra{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; /* Color los dos objetos al extremo de cada lado */
+  align-items: flex-end;
+  padding: 10px;
+}
+
+.navegacion a{
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 20px;
+  margin-right: 20px; /* Separar las palabras de navegacion */   
+}
+
+.nave a{
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 20px;
+  margin-right: 20px; /* Separar las palabras de navegacion */   
+}
+
+.cont a{
+  color: rgb(255, 255, 255);
+  background-color: #07ec13;
+  padding: 10px 300px;
+  border-radius: 15px;
+
+  text-align: center;
+  margin-right: 20px; /* Separar las palabras de navegacion */  
+}
+
+.cont a:hover{
+  padding: 10px 300px;
+  border-radius: 15px;
+  background-color: #ff0404;
+  color: #4400ff;
+  text-align: center;
+}
+
+
+
+
+.derecha nav img{
+  display: none;
+}
+
+
+
+
+.derecha #btn_menu{
+  display: none;
+}
+
+
+
+footer img{
+  padding-left: 25px;
+}
+
+
+
+/*4. selector individual */
+#cont-fondo{
+  position:absolute;
+  background-color: rgba(97, 91, 91, 0.7);
+  width: 100%;
+  height: 100%;
+
+}
+
+header .derecha a:hover{
+  padding: 5px 5px;
+  background-color: #ffffff;
+  color: #4400ff;
+  border-radius: 15px;
+} 
+
+header .derecha a:active{
+  padding: 5px 5px;
+  background-color: #ff0303;
+  color: #ffffff;
+  border-radius: 15px;
+
+}
+
+
+/*5. Pseudoclases */
+
+
+/* header a:hover{
+  padding: 5px 5px;
+  background: white;
+  color: #000000;
+  border-radius: 15px;
+} */
+
+
+
+
+/* POST - Publicaciones */
+
+.container-post{
+  max-width: 1200px;
+  margin: auto;
+}
+
+
+/* Uso de Display GRID */
+
+.posts{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20PX;
+
+  margin-top: 20px;
+  padding: 20px;
+
+}
+
+.posts .post{
+  background: white;
+  box-shadow: 0 0 20px 0px black; /* Se crea un resaltado */
+  border-radius: 6px;
+  overflow: hidden;
+  padding-bottom: 20px; /* Espaciado en el boton */
+}
+
+.post .ctn-img{
+  width: 100%;
+
+}
+
+.post .ctn-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.post h2{
+  font-size: 18px;
+  margin-top: 20px;
+  padding: 0px 20px;
+}
+
+.post span{
+  display: block;
+  margin-top: 10px;
+  padding: 0px 20px;
+}
+
+.ctn-tag{
+  width: 100%;
+  display: flex; /* Hace que las etiquetas esten en una misma linea */
+  flex-wrap: wrap;
+  margin-left: 16px;
+  margin-top: 10px;
+}
+
+.ctn-tag li{
+  list-style: none; /* Quitar estilos */
+  font-size: 14px;
+  margin: 4px;
+  padding: 6px 10px;
+  background: #e8e8e8;
+  cursor: default; /* Quitar cualquier efecto que tenga el curso al momento de pasar por los li */
+}
+
+.post button{
+  margin-top: 20px;
+  margin-left: 20px;
+  padding: 10px 50px;
+  font-size: 16px;
+  background: #46a2fd;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.post button:hover{
+  opacity: 0.8;
+}
+
+
+/* H1 */
+h1{
+  text-align: center;
+  font-family: Arial;
+  font-size: 2rem;
+  line-height: 1.8;
+}
+
+/* ICONOS */
+
+.icono img{
+  height: 100px;
+  padding: 20px;
+
+}
+
+.iconos-nosotros{
+  display: flex;
+  padding: 20px;
+  text-align: center;
+  padding: 50px;
+  margin: 10px;
+}
+
+.iconos-nosotros h3{
+  text-transform: uppercase;
+}
+
+.iconos-nosotros p{
+  text-align: left;
+  margin: 10px;
+}
+
+/* footer */
+footer{
+  width: 100%;
+  margin-top: 10px;
+  background-color: rgb(255, 255, 255);
+  padding: 5px;
+  text-align: center;
+  
+}
+
+/*3. Gradientes */
+
+.footer2{
+  background-image: linear-gradient(#36D1DC,#5B86E5,#348AC7); 
+  text-align: left;
+}
+
+h3{
+  padding-left: 25px;
+}
+
+hr {
+  height: 10px;
+  color: red;
+}
+
+.copy{
+  background-color: black;
+  width: 100%;
+  /* padding: 5px; */
+}
+
+/************************* Responsive ***************/
+
+
+/* Menu */
+
+@media screen and (max-width: 720px){
+  .navegacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navegacion a{
+    margin-top: 35px;
+    margin-left: 0px;
+  }
+}
+
+/* @media screen and (max-width: 720px){
+  
+  .navegacion{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      
+  }
+
+  .navegacion a{
+      margin-top: 35px;
+      margin-left: 0px;
+  }
+
+  .derecha nav{
+      position: fixed;
+      top: 0;
+      right: -350px;
+      background: white;
+      width: 250px;
+      height: 100vh;
+      padding: 40px;
+      padding-top: 40px;
+      z-index: 1;
+      transition: all 300ms;
+  }
+
+  .derecha a{
+      color: #bebebe;
+      
+  }
+
+  .derecha nav img{
+      display: block;
+      width: 60%;
+      filter: invert(0%);
+      
+      
+  }
+  
+  header a:hover{
+      cursor: pointer;
+      color: #348AC7;
+      padding: 0;
+  }
+
+  #back_menu{
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      background: rgba(0,0,0,0.5);
+      display: none;
+  }
+
+  .derecha #btn_menu{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      height: 50px;
+      background: rgba(255,255,255,0.1);
+      font-size: 24px;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: all 300ms;
+      position: relative;
+      top: -50px;
+  }
+
+  .derecha #btn_menu:hover{
+      background: rgba(255,255,255,0.4);
+  }
+
+} */
+
+/***** FOOTER *****/
+
+.pie-pagina{
+  width: 99%;
+  background-color: rgb(7, 7, 7);
+}
+
+.pie-pagina .grupo-1{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 50px;
+  padding: 45px 0px;
+}
+
+.pie-pagina .grupo-1 .box figure{
+  /* width: 100%; */
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure img{
+  width: 250px;
+  filter: invert(100%);
+}
+
+.pie-pagina .grupo-1 .box h2{
+  color: white;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+
+.pie-pagina .grupo-1 .box p{
+  color: #efefef;
+  margin-bottom: 10px;
+}
+
+.pie-pagina .grupo-1 .red-social a{
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  line-height: 45px;
+  color: rgb(0, 0, 0);
+  margin-right: 10px;
+  background-color:#d3e2f1;
+  border-radius: 10px;
+  transition: all 300ms ease;
+
+}
+
+.pie-pagina .grupo-1 .red-social a:hover{
+  color: aqua;
+}
+
+.pie-pagina .grupo-2{
+  background-color: #0a1a2a;
+  padding: 15px 10px;
+  text-align: center;
+  color: white;
+}
+
+.pie-pagina .grupo-2 small{
+  font-size: 15px;
+}
+
+
+/* Fin Footer */
+
+
+
+/* Imagen de fondo */
+@media screen and (max-width: 1100px){
+  header{
+      background-position: 50%;
+  }
+}
+
+/* Titulo H1 */
+@media screen and (max-width: 1200px){
+  header h1{
+      padding-left: 150px;
+      text-align: left;
+      color: white;
+      font-weight: bold;
+      line-height: 2;
+      max-width: 600px;
+  }
+}
+
+@media screen and (max-width: 930px){
+  header h1{
+      padding-left: 50px;
+      text-align: left;
+      color: white;
+      font-weight: bold;
+      line-height: 2;
+      max-width: 700px;
+  }
+}
+
+@media screen and (max-width: 830px){
+  header h1{
+      padding-left: 10px;
+      text-align: left;
+      color: white;
+      font-weight: bold;
+      line-height: 2;
+      max-width: 800px;
+  }
+  .pie-pagina .grupo-1{
+      width: 90%;
+      max-width: 1200px;
+      grid-template-columns: repeat(1,1fr);
+      grid-gap: 30px;
+      padding: 35px 0px;
+  }
+  .pie-pagina .grupo-1 .box figure img{
+      width: 150px;
+      filter: invert(100%);
+  }
+
+
+}
+
+@media screen and (max-width: 500px){
+  header h1{
+      font-size: 24px;
+      padding-left: 10px;
+      text-align: left;
+      color: white;
+      font-weight: bold;
+      line-height: 2;
+      /* max-width: 800px; */
+  }
+}
+
+
+/* Iconos de nosotros */
+@media screen and (max-width: 600px){
+  .iconos-nosotros{
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      text-align: center;
+      padding: 50px;
+      margin: 10px;
+  }
+}
+
+
+
+/* Casas destacadas */
+
+@media screen and (max-width: 1200px){
+  .posts{
+      width: 96%;
+      grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+
+@media screen and (max-width: 900px){
+  .posts{
+      width: 90%;
+      grid-template-columns: repeat(2, 1fr);
+      margin: 10px;
+  }   
+}
+
+
+@media screen and (max-width: 580px){
+  .posts{
+      width: 90%;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 20PX;
+
+      margin-top: 20px;
+      padding: 20px;
+  
+  }
+  
+}
+
+/******* Formulario **********/
+
+
+.formulario{
+  background-color: #757575;
+  width: 35%; /* Utilizar el valor mas pequeño */
+  margin: 0 auto; /* Centrar el formulario */
+  padding: 2rem;
+  border-radius: 1rem; /* Hacer borde redondeado al formulario */
+
+}
+
+.formulario fieldset{
+  border: none; /* Quitar border */
+}
+.formulario legend{
+  text-align: center; /* Centrar el titulo */
+  font-size: 19px; /* Hacer la letra algo mas pequeña */
+  text-transform: uppercase; /* Todas las letras en mayusculas */
+  font-weight: 700; /* Aplicar negrillas a las letras */
+  margin-bottom: 20px; /* Separacion con la linea de abajo */
+  color: #ffffff /* Color de las letras */
+
+}
+
+
+.campo{
+  margin-bottom: 1rem;
+}
+
+.campo label{
+  color: rgb(0, 0, 0);
+  font-weight: bold; /* Estilo de letra */
+  margin-bottom: .5rem;
+  display: block; /* Tomar todo el espacio que tenga */
+  text-align: center;
+  
+}
+
+.campo input{
+  width: 100%;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.campo textarea{
+  width: 100%;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.asesor1{
+  width: 100%;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.boton{
+  background-color: #0097A7;
+  color: white;
+  padding: 10px;
+  margin-top: 30px;
+  font-size: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 5px;
+  width: 30%;
+  border: none;
+
+}
+
+main{
+  
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 15px;
+}
+
+
+
+@media screen and (max-width: 800px){
+  .formulario{
+      background-color: #757575;
+      width: 80%; /* Utilizar el valor mas pequeño */
+  }
+  .formulario legend{
+      font-size: 15px; /* Hacer la letra algo mas pequeña */
+      
+  }    
+}
+
+main .nosotros{
+  text-align: center;
+  padding: 30px;
+}
+
+/* Imagen de fonfo */
+@media screen and (max-width: 1100px){
+  header{
+      background-position: 50%;
+  }
+}
+
+@media screen and (max-width: 800px){
+  table {
+      width:100%;
+  }
+  thead {
+      display: none;
+  }
+  tr:nth-of-type(2n) {
+      background-color: inherit;
+  }
+  tr td:first-child {
+      background: #f0f0f0;
+  }
+  tbody td {
+      display: block;
+      text-align:center;
+  }
+  tbody td:before {
+      content: attr(data-th);
+      display: block;
+      text-align:center;
+  }
+}
+
+@media screen and (max-width: 500px){
+  table {
+      width:50%;
+      margin: 20px;
+      font-size: 10px;
+  }
+  thead {
+      display: none;
+  }
+  tr:nth-of-type(2n) {
+      background-color: inherit;
+  }
+  tr td:first-child {
+      background: #f0f0f0;
+  }
+  tbody td {
+      display: block;
+      text-align:center;
+  }
+  tbody td:before {
+      content: attr(data-th);
+      display: block;
+      text-align:center;
+  }
+
+  header img{
+      width: 100px;
+      height: 100px;
+  }
+}
+
+/* CONTENEDOR DE CATEGORIAS */
+input[type="radio"]{
+  display: none;
+}
+
+
+.container-category{
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap; /* Cuando se llene el espacio los obejtos se pondran uno debajo del otro */
+  margin-top: 20px;
+}
+
+.container-category label{
+  padding: 6px 40px;
+  margin: 10px;
+  font-size: 20px;
+  background: #e2e2e2;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.container-category label:hover{
+  opacity: 0.6;
+}
+
+/* Sistema de Filtrado */
+
+[value="TODOS"]:checked ~ .posts .post[data-category]{
+  display: block;
+}
+
+[value="DEPARTAMENTOS"]:checked ~ .posts .post:not([data-category~="DEPARTAMENTOS"]),
+[value="CASAS"]:checked ~ .posts .post:not([data-category~="CASAS"]),
+[value="SUITS"]:checked ~ .posts .post:not([data-category~="SUITS"]),
+[value="TERRENOS"]:checked ~ .posts .post:not([data-category~="TERRENOS"]),
+[value="PENTHOUSE"]:checked ~ .posts .post:not([data-category~="PENTHOUSE"]),
+[value="HACIENDAS"]:checked ~ .posts .post:not([data-category~="HACIENDAS"]){
+  display: none;
+}
+
+[value="DEPARTAMENTOS"]:checked ~ .container-category [for="DEPARTAMENTOS"],
+[value="CASAS"]:checked ~ .container-category [for="CASAS"],
+[value="SUITS"]:checked ~ .container-category [for="SUITS"],
+[value="TERRENOS"]:checked ~ .container-category [for="TERRENOS"],
+[value="PENTHOUSE"]:checked ~ .container-category [for="PENTHOUSE"],
+[value="HACIENDAS"]:checked ~ .container-category [for="HACIENDAS"],
+[value="TODOS"]:checked ~ .container-category [for="TODOS"]
+{
+  background: #46a2fd;
+  color: white;
+}
+
+
+
+.tabla{
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border: 3px solid purple;
+
+}
